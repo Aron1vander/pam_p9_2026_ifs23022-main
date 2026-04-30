@@ -1,22 +1,61 @@
 import 'package:flutter/material.dart';
+import 'app_colors.dart';
+import 'app_typography.dart';
 
 class AppTheme {
-  static ThemeData light = ThemeData(
+  AppTheme._();
+
+  static ThemeData get lightTheme => ThemeData(
+    useMaterial3: true,
     brightness: Brightness.light,
-    scaffoldBackgroundColor: Color(0xFFF5F7FB),
-    appBarTheme: AppBarTheme(
-      elevation: 0,
-      backgroundColor: Colors.transparent,
-      foregroundColor: Colors.black,
+    textTheme: AppTypography.textTheme,
+    colorScheme: const ColorScheme.light(
+      primary: kLightPrimary,
+      onPrimary: kLightOnPrimary,
+      primaryContainer: kLightPrimaryContainer,
+      onPrimaryContainer: kLightOnPrimaryContainer,
+      secondary: kLightSecondary,
+      onSecondary: kLightOnSecondary,
+      secondaryContainer: kLightSecondaryContainer,
+      onSecondaryContainer: kLightOnSecondaryContainer,
+      tertiary: kLightTertiary,
+      onTertiary: kLightOnTertiary,
+      error: kLightError,
+      onError: kLightOnError,
+      errorContainer: kLightErrorContainer,
+      onErrorContainer: kLightOnErrorContainer,
+      surface: kLightSurface,
+      onSurface: kLightOnSurface,
+      surfaceContainerHighest: kLightSurfaceVariant,
+      onSurfaceVariant: kLightOnSurfaceVariant,
+      outline: kLightOutline,
     ),
   );
 
-  static ThemeData dark = ThemeData(
+  static ThemeData get darkTheme => ThemeData(
+    useMaterial3: true,
     brightness: Brightness.dark,
-    scaffoldBackgroundColor: Color(0xFF0F172A),
-    appBarTheme: AppBarTheme(
-      elevation: 0,
-      backgroundColor: Colors.transparent,
+    textTheme: AppTypography.textTheme,
+    colorScheme: const ColorScheme.dark(
+      primary: kDarkPrimary,
+      onPrimary: kDarkOnPrimary,
+      primaryContainer: kDarkPrimaryContainer,
+      onPrimaryContainer: kDarkOnPrimaryContainer,
+      secondary: kDarkSecondary,
+      onSecondary: kDarkOnSecondary,
+      secondaryContainer: kDarkSecondaryContainer,
+      onSecondaryContainer: kDarkOnSecondaryContainer,
+      tertiary: kDarkTertiary,
+      onTertiary: kDarkOnTertiary,
+      error: kDarkError,
+      onError: kDarkOnError,
+      errorContainer: kDarkErrorContainer,
+      onErrorContainer: kDarkOnErrorContainer,
+      surface: kDarkSurface,
+      onSurface: kDarkOnSurface,
+      surfaceContainerHighest: kDarkSurfaceVariant,
+      onSurfaceVariant: kDarkOnSurfaceVariant,
+      outline: kDarkOutline,
     ),
   );
 }

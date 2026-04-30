@@ -1,11 +1,11 @@
 {
-    "name": "pam_p9_2026_ifs18005",
-    "short_name": "pam_p9_2026_ifs18005",
+    "name": "pam_p9_2026_ifs23024",
+    "short_name": "pam_p9_2026_ifs23024",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Delcom Motivations with AI Generate",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
